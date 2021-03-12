@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@100&display=swap");
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.header .nav_bar {
+  position: relative;
+  z-index: 1;
+}
+
+.header .nav_bar nav {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.header .nav_bar .nav-item a {
+  width: 100%;
+  margin: 0px 60px 0px 40px;
+  font-size: 20px;
+}
+
+.header .slider {
+  width: 100%;
+  z-index: 0;
+}
+
+.header .slider .swiper-wrapper img {
+  height: 100vh;
+  width: 100%;
+}
+
+.header .slider .swiper-button-next {
+  opacity: 0.3;
+  color: white;
+  z-index: 3;
+}
+
+.header .slider .swiper-button-prev {
+  opacity: 0.3;
+  color: white;
+  z-index: 3;
+}
+
+.header .header_content {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 7%;
+  color: white;
+  height: 61vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .header_content p {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+
+.header .header_content button {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.welcom_to {
+  margin-top: 100px;
+}
+
+.welcom_to .left_side h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.welcom_to .left_side .fast_food {
+  font-family: "Dancing Script", cursive;
+  color: orange;
+}
+
+.welcom_to .left_side h6 {
+  text-align: center;
+  position: relative;
+  width: 60%;
+}
+
+.welcom_to .left_side h6::before {
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+
+.welcom_to .left_side h6::after {
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.welcom_to .left_side .text {
+  width: 60%;
+}
+
+.welcom_to .right_side img {
+  width: 100%;
+}
+
+.quote {
+  background-image: url(../img/bg10.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 7%;
+  padding: 5%;
+}
+
+.quote h4 {
+  line-height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.quote .quote_creator {
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+.day-menu .top-text h2, .customer_reviews .top-text h2 {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.day-menu .top-text h2::before, .customer_reviews .top-text h2::before {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background-color: darkgray;
+  position: absolute;
+  left: 30%;
+  top: 12px;
+}
+
+.day-menu .top-text h2::after, .customer_reviews .top-text h2::after {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background-color: darkgray;
+  position: absolute;
+  right: 30%;
+  top: 12px;
+}
+
+.day-menu {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.day-menu .top-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.day-menu .top-text h1 .special {
+  font-family: "Dancing Script", cursive;
+  color: orange;
+  font-size: 70px;
+}
+
+.day-menu .right-side .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.day-menu .right-side .card-body img {
+  width: 15%;
+  border-radius: 20px;
+  height: 70px;
+}
+
+.day-menu .right-side .card-body h5 {
+  font-weight: bold;
+}
+
+.day-menu .right-side .card-body h5 .sub-title {
+  font-weight: 300;
+}
+
+.day-menu .right-side .card-body p {
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+
+.customer_reviews {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.customer_reviews .swiper-wrapper {
+  height: 50%;
+}
+
+.customer_reviews .top-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.customer_reviews .top-text h1 .special {
+  font-family: "Dancing Script", cursive;
+  color: orange;
+  font-size: 70px;
+}
+
+.customer_reviews .flex_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 8% 0% 15% 0%;
+}
+
+.customer_reviews .flex_content img {
+  width: 140px;
+  border-radius: 50%;
+}
+
+.customer_reviews .flex_content h5 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.customer_reviews .swiper-container-two .swiper-slide {
+  height: 50%;
+}
+
+.book_table_now {
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 7%;
+  padding: 5%;
+}
+
+.book_table_now button {
+  border-radius: 25px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 5px;
+}
+
+.book_table_now h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.book_table_now p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: orange;
+  padding: 4% 10%;
+}
+
+.contact .col-md-2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contact .col-md-10 h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact .col-md-10 p {
+  color: white;
+  font-size: 20px;
+}
+
+.contact .contact_text i {
+  font-size: 30px;
+  color: orange;
+  background-color: white;
+  padding: 10px;
+  border-radius: 40%;
+  margin-right: 70px;
+}
+
+@media (max-width: 575.99px) {
+  .day-menu .top-text h2::before {
+    content: "";
+    left: 20%;
+  }
+  .day-menu .top-text h2::after {
+    content: "";
+    right: 20%;
+  }
+  .customer_reviews .top-text h2::before {
+    content: "";
+    left: 20%;
+  }
+  .customer_reviews .top-text h2::after {
+    content: "";
+    right: 20%;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .day-menu .top-text h2::before {
+    content: "";
+    left: 20%;
+  }
+  .day-menu .top-text h2::after {
+    content: "";
+    right: 20%;
+  }
+  .customer_reviews .top-text h2::before {
+    content: "";
+    left: 20%;
+  }
+  .customer_reviews .top-text h2::after {
+    content: "";
+    right: 20%;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.99px) {
+  .day-menu .top-text h2::before {
+    content: "";
+    left: 20%;
+  }
+  .day-menu .top-text h2::after {
+    content: "";
+    right: 20%;
+  }
+  .customer_reviews .top-text h2::before {
+    content: "";
+    left: 20%;
+  }
+  .customer_reviews .top-text h2::after {
+    content: "";
+    right: 20%;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */

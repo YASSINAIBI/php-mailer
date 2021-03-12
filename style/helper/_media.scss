@@ -1,0 +1,144 @@
+// // Extra small
+// @media (max-width: 575.99px) {
+
+// }
+
+// // Small
+// @media (min-width: 576px) and (max-width: 767.99px) {
+
+// }
+
+// // Medium
+// @media (min-width: 769px) and (max-width: 991.99px) {
+
+// }
+
+// // Large
+// @media (min-width: 992px) and (max-width: 1199.98px) { 
+//  }
+
+// // Extra large
+// @media (min-width: 1200px) { 
+    
+//  }
+
+// Extra small
+@include Extra-small($extra-small-max-width){
+    .day-menu {
+        .top-text {
+            h2 {
+                &::before {
+                    content: "";
+                    left: 20%;
+                }
+                &::after {
+                    content: "";
+                    right: 20%;
+                }
+            }
+        }
+    }
+
+    .customer_reviews {
+        .top-text {
+            h2 {
+                &::before {
+                    content: "";
+                    left: 20%;
+                }
+                &::after {
+                    content: "";
+                    right: 20%;
+                }
+            }
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+// Small
+@include Smal-medium-large($small-min-width ,$small-max-width) {
+    .day-menu {
+        .top-text {
+            h2 {
+                &::before {
+                    content: "";
+                    left: 20%;
+                }
+                &::after {
+                    content: "";
+                    right: 20%;
+                }
+            }
+        }
+    }
+
+    .customer_reviews {
+        .top-text {
+            h2 {
+                &::before {
+                    content: "";
+                    left: 20%;
+                }
+                &::after {
+                    content: "";
+                    right: 20%;
+                }
+            }
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+// Medium
+@include Smal-medium-large($medium-min-width ,$Medium-max-width) {
+    .day-menu {
+        .top-text {
+            h2 {
+                &::before {
+                    content: "";
+                    left: 20%;
+                }
+                &::after {
+                    content: "";
+                    right: 20%;
+                }
+            }
+        }
+    }
+
+    .customer_reviews {
+        .top-text {
+            h2 {
+                &::before {
+                    content: "";
+                    left: 20%;
+                }
+                &::after {
+                    content: "";
+                    right: 20%;
+                }
+            }
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+// Large
+@include Smal-medium-large($large-min-width ,$large-max-width) {
+
+}
+
+// Extra large
+@include Extra-large($extra-large-min-width) {
+    
+}

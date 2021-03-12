@@ -1,0 +1,20 @@
+// Extra small
+@mixin Extra-small($max-width) {
+    @media (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+// Small
+@mixin Smal-medium-large($min-width ,$max-width) {
+    @media (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+// Extra large
+@mixin Extra-large($min-width) {
+    @media (min-width: #{$min-width}) {
+        @content;
+    }
+}

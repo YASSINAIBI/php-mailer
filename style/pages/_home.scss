@@ -1,0 +1,293 @@
+.header {
+    .nav_bar {
+        position: relative;
+        z-index: 1;
+        nav {
+            box-shadow: unset;
+        }
+        .nav-item {
+            a {
+                width: 100%;
+                margin: 0px 60px 0px 40px;
+                font-size: 20px;
+            }
+        }
+    }
+    .slider {
+        width: 100%;
+        z-index: 0;
+        .swiper-wrapper {
+            img {
+                height: 100vh;
+                width: 100%;
+            }
+        }
+        .swiper-button-next {
+            opacity: 0.3;
+            color: white;
+            z-index: 3;
+        }
+        .swiper-button-prev {
+            opacity: 0.3;
+            color: white;
+            z-index: 3;
+        }
+    }
+    .header_content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+        color: white;
+        height: 61vh;
+        flex-direction: column;
+        p {
+            font-size: 50px;
+            font-family: $secondary-font;
+        }
+        button {
+            font-size: 30px;
+            font-family: $main-font;
+            font-weight: bold;
+        }
+    }
+}
+
+.welcom_to {
+    margin-top: 100px;
+    .left_side {
+        h1 {
+            font-family: $main-font;
+            font-weight: bold;
+        }
+        .fast_food {
+            font-family: $secondary-font;
+            color: orange;
+        }
+        h6 {
+            text-align: center;
+            position: relative;
+            width: 60%;
+            &::before {
+                content: "";
+                width: 20%;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                left: 0;
+                top: 12px;
+            }
+            &::after {
+                content: "";
+                width: 20%;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                right: 0;
+                top: 12px;
+            }
+        }
+        .text {
+            width: 60%;
+        }
+    }
+    .right_side {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.quote {
+    background-image: url(../img/bg10.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 7%;
+    padding: 5%;
+    h4 {
+        line-height: 50px;
+        font-family: $main-font;
+        font-weight: bold;
+        color: white;
+    }
+    .quote_creator {
+        font-family: $secondary-font;
+        color: white;
+    }
+}
+
+%test_befor_and_after {
+    h2 {
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        &::before {
+            content: "";
+            width: 10%;
+            height: 3px;
+            background-color: darkgray;
+            position: absolute;
+            left: 30%;
+            top: 12px;
+        }
+        &::after {
+            content: "";
+            width: 10%;
+            height: 3px;
+            background-color: darkgray;
+            position: absolute;
+            right: 30%;
+            top: 12px;
+        }
+    }
+}
+
+.day-menu {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .top-text {
+        h1 {
+            font-family: $main-font;
+            font-size: 40px;
+            font-weight: bold;
+            .special  {
+                font-family: $secondary-font;
+                color: orange;
+                font-size: 70px;
+            }
+        }
+        @extend %test_befor_and_after;
+    }
+    .right-side {
+        .card-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            img {
+                width: 15%;
+                border-radius: 20px;
+                height: 70px;
+            }
+            h5{
+                font-weight: bold;
+                .sub-title {
+                    font-weight: 300;
+                }
+            }
+            p {
+                font-weight: bold;
+                font-family: $secondary-font;
+            }
+        }
+    }
+}
+
+.customer_reviews {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .swiper-wrapper {
+        height: 50%;
+    }
+    .top-text {
+        h1 {
+            font-family: $main-font;
+            font-size: 40px;
+            font-weight: bold;
+            .special  {
+                font-family: $secondary-font;
+                color: orange;
+                font-size: 70px;
+            }
+        }
+        @extend %test_befor_and_after;
+    }
+    .flex_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 8% 0% 15% 0%;
+        img {
+            width: 140px;
+            border-radius: 50%;
+        }
+        h5 {
+            font-weight: bold;
+            font-family: $main-font;
+        }
+    }
+    .swiper-container-two {
+        .swiper-slide {
+            height: 50%;
+        }
+    }
+}
+
+.book_table_now {
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 7%;
+    padding: 5%;
+    button {
+        border-radius: 25px;
+        color: white;
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 17px;
+        letter-spacing: 5px;
+    }
+    h2 {
+        color: white;
+        font-family: $main-font;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    p {
+        color: white;
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background-color: orange;
+    padding: 4% 10%;
+    .col-md-2 {
+        align-self: center;
+    }
+    .col-md-10 {
+        h5 {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        p {
+            color: white;
+            font-size: 20px;
+        }
+    }
+    .contact_text {
+        i {
+            font-size: 30px;
+            color: orange;
+            background-color: white;
+            padding: 10px;
+            border-radius: 40%;
+            margin-right: 70px;
+        }
+    }
+}
+
